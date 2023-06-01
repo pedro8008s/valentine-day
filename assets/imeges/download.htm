@@ -1,0 +1,583 @@
+
+<!DOCTYPE html>
+<html class="index" style="padding-bottom: 0px!important;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Aurélien Lepage, Portfolio. Directeur Artistique Multimédia, basé à Paris. Passionné par la création d'expérience digitale en mettant l'accent sur le motion design et l'inétraction, le tous accompagné d'une touche d'ergonomie">
+
+
+
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!-- animsition.css -->
+
+
+    <link rel="stylesheet" href="./css/animsition.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="new/style.css">
+
+    <!-- tweenmax correction-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <!-- Timelinemax correction-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TimelineMax.min.js"></script>
+    <script src="bodymovin.js"></script>
+
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- animsition.js -->
+    <script src="./js/animsition.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+
+    <!-- scrollmagic correction -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script> -->
+
+
+    <!--         chargement font -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap" rel="stylesheet">
+
+    <script>
+        // init controller
+        var controller = new ScrollMagic.Controller();
+    </script>
+
+
+    <title>Aurélien Lepage - Portfolio - DA </title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand animsition-link" href="index.html">
+                <!-- <img src="./photo/logo-aurelien-lepage-white.svg"> -->
+                <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.99 30.12">
+                    <defs>
+                        <style>
+                            .cls-1 {
+                                fill: #ffffff;
+                            }
+                        </style>
+                    </defs>
+                    <path class="cls-1"
+                        d="M34,28.65H27.83a7.92,7.92,0,0,0,1.61-11.09c-.13-.18-.28-.36-.43-.53a7.64,7.64,0,0,0-5.21-2.62,7.86,7.86,0,0,0-7.06,3v-9a8.23,8.23,0,0,0-.32-2.7A8.17,8.17,0,0,0,10,.17C9.63.09,9.22,0,8.82,0h-.9A6.88,6.88,0,0,0,6.74.18,8.41,8.41,0,0,0,.17,6.56C.09,6.92.06,7.29,0,7.67V22.34a.52.52,0,0,0,.58.34h.47c.43,0,.54-.11.54-.55V10l.26.23,2.66,2.41L8,15.75c.62.57,1.2,1.17,1.79,1.76,1.51,1.52,3.1,3,4.68,4.55a1.66,1.66,0,0,1,.5,1,8,8,0,0,0,4.24,6.21,6.9,6.9,0,0,0,3.41.87H34V28.65ZM1.74,7.41A6.61,6.61,0,0,1,8.6,1.67a6.59,6.59,0,0,1,6.46,5.74Zm7.35,6.91a.62.62,0,0,1-.58-.17l-5.37-5L3,9H15.07a4.22,4.22,0,0,1-.47,1.51A6.75,6.75,0,0,1,9.09,14.32Zm6.06,6.05-4.92-4.65a8.59,8.59,0,0,0,4.9-3.16Zm8,8.25a6.37,6.37,0,1,1,6.33-6.4v.12a6.38,6.38,0,0,1-6.35,6.29Z" />
+                </svg>
+            </a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active animsition-link" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" href="#projets">Projets</a>
+                    <a class="nav-link animsition-link" href="about-dev/about-aurelien-lepage.html">En savoir plus</a>
+                    <!-- <a class="nav-link animsition-link " href="apropos.html" tabindex="-1" aria-disabled="true">À
+                        propos</a> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Showreel 2020</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+                            src="https://player.vimeo.com/video/565293639?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" title="final3.mp4"></iframe>
+                    </div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="animsition">
+
+
+        <!-- <div class="scroll2">
+            <p>Scroll down</p>
+
+        </div> -->
+
+
+        <div class="HometxtIntro" data-scroll-speed="9">
+            <p >
+                Bienvenue
+                sur mon Portfolio !
+            </p>
+
+            <div class="containIntro">
+           <button class="btn btnmaster homeBtn">  <a class="voirProjet" href="#projets">Voir&#xA0;mes&#xA0;projets</a></button>
+
+
+            <button type="button" class="btn  btnmaster btnmasteralign homeBtn" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                Showreel
+            </button>
+
+            </div>
+
+        </div>
+
+        <div class="row Darkmode">
+
+
+            <div class="d-sm-block col-md-2"></div>
+            <div class="col-sm-12 col-md-8 aboveintro">
+
+                <!-- 
+            <div id="trigger"></div>
+            <div id="cityrender"></div> -->
+                <div id="trigger" class=""></div>
+                <div id='aboutpage'></div>
+
+            </div>
+            <div class="d-sm-block col-md-2"></div>
+            <div class="parallax-under" data-scroll-speed="2"></div>
+        </div>
+
+        <div class="glasspose">
+            <div class="glassabove digit">
+                <div class="floatText2">
+                    <p data-scroll-speed="2">
+                        motion-design
+                    </p>
+                </div>
+                <p class="bgtextmd2" data-scroll-speed="-2">Directeur Artistique</p>
+            </div>
+            <!-- <div class="rondglass"> </div> -->
+        </div>
+
+        <div class="squareglass"> </div>
+        <div class="squareglass2" data-scroll-speed="-9"> </div>
+        <div class="squareglass3" data-scroll-speed="8"> </div>
+        <div class="squareglass4"> </div>
+        <div class="squareglass5" data-scroll-speed="2"> </div>
+        <div class="squareglass6"> </div>
+        <div class="squareglass7"> </div>
+        <div class="squareglass8"> </div>
+        <div class="squareglass9"> </div>
+        <div class="squareglass10"> </div>
+        <div class="squareglass11"> </div>
+        <div class="squareglass12"> </div>
+        <!-- <div class="squareglass13"> </div> -->
+        <!-- <div class="squareglass14"> </div> -->
+        <div class="glassunder"></div>
+
+
+
+        <section class="newsection">
+            <div class="containtitre">
+
+
+                <h2 id="projets"><span> Mes projets. </span>Des créations réalisées pour des clients et en effectuant des recherches.
+                </h2>
+
+                <!-- Control buttons -->
+                <div id="myBtnContainer">
+                    <button class="btn active resetMenu" onclick="filterSelection('all')"> Afficher tous les
+                        projets</button>
+
+                    <div class="menuFilter">
+                        <button class="btn2 displayNone" onclick="filterSelection('ux')">
+                            <!-- <lottie-player id="btnux" src="new/dataux.json"></lottie-player> -->
+                            UX Ui
+                        </button>
+                        <button class="btn2" onclick="filterSelection('motion')">
+              
+                        
+                        Motion-design</button>
+                        <button class="btn2" onclick="filterSelection('front')"> Webdesign & Front-end</button>
+                        <button class="btn2" onclick="filterSelection('DA')"> Direction artistique</button>
+                        <button class="btn2" onclick="filterSelection('exper')"> Expérimentations</button>
+                        <button class="btn2" onclick="filterSelection('illus')"> Illustration</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The  elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+            <div class="containerfilter masterGridBG row">
+
+
+           <div class="filterDiv exper motion DA gridperso digit">
+                    <a href="3dart.html" class="troisdart animsition-link">
+                       <div class="imggrid"></div>
+                        <p class="hastagtop">#motion-design 3D #DA</p>
+                        <p class="titrBtn digit2 correcSize">3D art</p>
+                        <p class="ensavoir">En savoir plus ></p>
+                    </a>
+                </div>
+
+
+                <div class="filterDiv front DA gridperso digit">
+                    <a href="sinfoni.html" class="sinfonimaster animsition-link">
+                       <div class="imggrid"></div>
+                        <p class="hastagtop">#Webdesign #DA</p>
+                        <p class="titrBtn digit2 correcSize">Sinfoni</p>
+                        <p class="ensavoir">En savoir plus ></p>
+                    </a>
+                </div>
+
+
+            <div class="filterDiv motion exper gridperso digit">
+                    <a href="streetwear.html" class="streetwearmaster animsition-link">
+                       <div class="imggrid"></div>
+                        <p class="hastagtop">#motion-design 3D #Expérimentation</p>
+                        <p class="titrBtn digit2 correcSize">Street Wear</p>
+                        <p class="ensavoir">En savoir plus ></p>
+                    </a>
+                </div>
+
+       <div class="filterDiv DA gridperso digit ">
+                    <a href="eds.html" class="edsback animsition-link">
+                      <div class="imggrid"> </div>
+                        <p class="hastagtop">#Direction Artistique #Branding</p>
+                        <p class="titrBtn digit2">EDS</p>
+                        <p class="ensavoir">En savoir plus ></p>
+                    </a>
+                </div>
+
+
+                <div class="filterDiv DA gridperso digit">
+                    <a href="opera.html" class="operaback animsition-link">
+                    <div class="imggrid"> </div>
+                        <p class="hastagtop">#Direction Artistique #Branding</p>
+                        <p class="titrBtn digit2">Opéra</p>
+                        <p class="ensavoir">En savoir plus ></p>                    
+                    </a>
+
+                </div>
+
+
+         
+           <div class="filterDiv front DA gridperso digit">
+                    <a href="mobitype.html" class="themobitype animsition-link">
+                       <div class="imggrid"></div>
+                        <p class="hastagtop">#Front-end #DA</p>
+                        <p class="titrBtn digit2 correcSize">Mobitype </p>
+                        <p class="ensavoir">En savoir plus ></p>
+                    </a>
+                </div>
+
+                <div class="filterDiv motion DA gridperso digit">
+                    <a href="fdti-geomarketing.html" class="fdtigeo animsition-link">
+                    <div class="imggrid"></div>
+                     <p class="hastagtop">#Motion-design #DA</p>
+                        <p class="titrBtn digit2 correcSize">Fdti geo</p>
+                        <p class="ensavoir">En savoir plus ></p>
+                    </a> 
+                   
+                </div>
+
+                <div class="filterDiv front motion illus gridperso digit">
+                    <a href="./labo/fdti/index.html" class="fdtiback animsition-link">
+                      <div class="imggrid"> </div>
+                        <p class="hastagtop">#Direction Artistique #Branding</p>
+                        <p class="titrBtn digit2">Fdti</p>
+                        <p class="ensavoir">En savoir plus ></p>
+                    </a>
+                </div>
+
+
+
+   
+                <div class="filterDiv front DA gridperso digit">
+                    <a href="euroconstruct.html" class="eurocon animsition-link">
+                       <div class="imggrid"></div>
+                        <p class="hastagtop">#DA #Front-end</p>
+                        <p class="titrBtn digit2 correcSize">Euroconstruct</p>
+                            
+                        <p class="ensavoir">En savoir plus ></p>
+                    </a>
+                </div>
+
+
+
+
+
+
+                <div class="filterDiv motion illus gridperso digit">
+                    <a href="thegreendata.html" class="thegreen animsition-link">
+                       <div class="imggrid"></div>
+                        <p class="hastagtop">#Motion-design #Illus</p>
+                        <p class="titrBtn  digit2 correcSize">The Green Data</p>
+                        <p class="ensavoir">En savoir plus ></p>
+                    </a>
+                </div>
+
+
+
+        
+
+                <div class="filterDiv DA motion illus gridperso digit">
+                    <a href="gogomitch.html" class="thegogo animsition-link">
+                       <div class="imggrid"></div>
+                        <p class="hastagtop">#Illus #Motion-design</p>
+                        <p class="titrBtn digit2 correcSize ">Gogomitch</p>
+                        <p class="ensavoir">En savoir plus ></p>
+                    </a>
+                </div>
+
+                <div class="filterDiv DA motion demi gridperso digit">
+                    <a href="habitat&jardin.html" class="thehabi animsition-link">
+                       <div class="imggrid"></div>
+                        <p class="hastagtop">#DA #Motion-design</p>
+                        <p class="titrBtn digit2 correcSize">Habitat & jardin</p>
+                        <p class="ensavoir">En savoir plus ></p>
+                    </a>
+                </div>
+
+
+                <div class="filterDiv motion DA demi gridperso digit">
+                    <a href="./labo/peach.html" class="paspeach animsition-link">
+                       <div class="imggrid"></div>
+                        <p class="hastagtop">#DA #Motion-design</p>
+                        <p class="titrBtn digit2 correcSize">J'suis pas ta Peach</p>
+                        <p class="ensavoir">En savoir plus ></p>
+                    </a>
+                </div>
+
+
+
+                <div class="filterDiv motion DA gridperso digit">
+                    <a href="city-mobility.html" class="motionmobi animsition-link">
+                       <div class="imggrid"></div>
+                        <p class="hastagtop">#DA #Motion-design</p>
+                        <p class="titrBtn digit2 correcSize">City mobility</p>
+                        <p class="ensavoir">En savoir plus ></p>
+                    </a>
+                </div>
+                
+                 <div class="filterDiv motion DA gridperso digit">
+                    <a href="labo/motion.html" class="redstory animsition-link">
+                       <div class="imggrid"></div>
+                        <p class="hastagtop">#DA #Motion-design</p>
+                        <p class="titrBtn digit2 correcSize">The story </p>
+                        <p class="ensavoir">En savoir plus ></p>
+                    </a>
+                </div>
+
+
+    <div class="filterDiv exper DA gridperso digit">
+                    <a href="patisserie.html" class="picardtof animsition-link">
+                       <div class="imggrid"></div>
+                        <p class="hastagtop">#Expérimentation #DA</p>
+                        <p class="titrBtn digit2 correcSize">Ypicard</p>
+                        <p class="ensavoir">En savoir plus ></p>
+                    </a>
+                </div>
+        
+
+     
+       
+
+
+                <!-- <div class="filterDiv cars">Volvo</div>
+                <div class="filterDiv colors">Red</div>
+                <div class="filterDiv cars animals">Mustang</div>
+                <div class="filterDiv colors">Blue</div>
+                <div class="filterDiv animals">Cat</div>
+                <div class="filterDiv animals">Dog</div>
+                <div class="filterDiv fruits">Melon</div>
+                <div class="filterDiv fruits animals">Kiwi</div>
+                <div class="filterDiv fruits">Banana</div>
+                <div class="filterDiv fruits exper">Lemon</div>
+                <div class="filterDiv animals illus">Cow</div>
+                <div class="filterDiv exper">exper</div>
+                <div class="filterDiv illus">Illustrations</div> -->
+            </div>     
+            
+            
+
+        </section>
+
+  
+
+
+
+
+    </div>
+
+
+
+    <footer class="fixed-bottom">
+        <p>Aurélien Lepage - Créatif basé à Paris</p>
+        <p>Envoyez moi un email - <a href="mailto:lepage.aurel@gmail.com">lepage.aurel@gmail.com</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script src="scroll-speed.js"></script>
+    <script src="js/filter.js"></script>
+
+
+    <script>
+        var animData = {
+            container: document.getElementById('aboutpage'),
+            path: './source/data/data.json',
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            name: "animScroll",
+        }, animScroll, tl;
+
+
+        var animScroll = bodymovin.loadAnimation(animData)
+
+
+        animScroll.addEventListener('DOMLoaded', function () {
+            tl = new TimelineMax({ repeat: 0 })
+            tl.to({ frame: 0 }, 1, {
+                frame: animScroll.totalFrames - 1,
+                onUpdate: function () {
+                    animScroll.goToAndStop(Math.round(this.target.frame), true)
+                },
+                Ease: Linear.easeNone
+            })
+
+            var controller = new ScrollMagic.Controller();
+
+            var scene = new ScrollMagic.Scene({
+                triggerElement: ".env-three",
+                offset: 0,
+                duration: 7000
+            }).setTween(tl).setPin("#aboutpage").addTo(controller);
+
+        })
+
+
+
+    </script>
+
+    <script>
+        var myModal = document.getElementById('myModal')
+        var myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', function () {
+            myInput.focus()
+        })
+    </script>
+
+
+
+    <!-- <script>
+        LottieInteractivity.create({
+  player: '#operaPlayer',
+  mode: 'cursor',
+  actions: [
+    {
+      position: { x: [0, 1], y: [0, 1] },
+      type: 'loop',
+      frames: [10, 15],
+    },
+  ],
+});</script> -->
+
+
+    <!-- <script>
+LottieInteractivity.create({
+  mode:"cursor",
+  player: "#operaPlayer",
+  actions: [
+    {
+      position: { x: [0, 1], y: [0, 1] },
+      type: "loop",
+      frames: [0, 53]
+    },
+    {
+      position: { x: -1, y: -1 },
+      type: 'stop',
+      frames: [53],
+    }
+  ]
+});
+</script>
+
+<script>
+LottieInteractivity.create({
+  mode:"cursor",
+  player: "#fdtiPlayer",
+  actions: [
+    {
+      position: { x: [0, 1], y: [0, 1] },
+      type: "loop",
+      frames: [0, 34]
+    },
+    {
+      position: { x: -1, y: -1 },
+      type: 'stop',
+      frames: [0],
+    }
+  ]
+});
+</script> -->
+
+    <script>
+        LottieInteractivity.create({
+            mode: "cursor",
+            player: "#btnux",
+            actions: [
+                {
+                    position: { x: [0, 1], y: [0, 1] },
+                    type: "play",
+                    frames: [0, 61],
+                },
+                {
+                    position: { x: -1, y: -1 },
+                    type: 'stop',
+                    frames: [0],
+                }
+            ]
+        });
+    </script>
+
+
+<!-- <script>
+    let iconSkipForward = document.querySelector('.bodymovinanim');
+
+    let animationSkipForward = bodymovin.loadAnimation({
+            container: iconSkipForward,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "new/dataux.json",
+    });
+
+      iconSkipForward.addEventListener('click', function() {
+      animationSkipForward.playSegments([0,60], true);
+    });
+    </script> -->
+
+
+
+
+
+</body>
+
+</html>
